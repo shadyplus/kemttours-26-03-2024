@@ -42,9 +42,21 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main content" id="top">
-     
+     <style>
+      @media only screen and (max-width: 600px) {
+        .lang_fixed{
+          position: fixed;
+    left: 10%;
+    top: 46px;
+    border-radius: 34px;
+    background: none;
+    max-width: fit-content;
+}
+}
+    
+     </style>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a style="font-weight: 600;" class="navbar-brand" href="index.html"><img style="margin-right: 5px;" src="assets/img/logo.png" height="34" alt="logo" />Kemttours</a>
+        <div class="container" style="place-content: flex-end;"><a style="font-weight: 600;" class="navbar-brand" href="index.html"><img style="margin-right: 5px;" src="assets/img/logo.png" height="34" alt="logo" />Kemttours</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
@@ -52,7 +64,7 @@
               <li class="nav-item px-3 px-xl-4 pb-1"><div class="dropdown">
                 <button style="  border-radius: 9px;
                 
-                font-weight: 500;  border-radius: 9px;" class="btn btn-transparent dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                font-weight: 500;  border-radius: 9px; padding: 0;" class="btn btn-transparent dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Destinations
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -62,7 +74,7 @@
                 </ul>
               </div></li>
               <li class="nav-item px-3 px-xl-4 pb-1"><div class="dropdown">
-                <button style="   border-radius: 9px;
+                <button style="  padding: 0;  border-radius: 9px;
                 
                 font-weight: 500; border-radius: 9px;" class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   booking
@@ -97,21 +109,21 @@
       
       <div class="lang lang_fixed">
         <div id="ytWidget" style="display: none;"></div>
-        <div class="lang__link lang__link_select" data-lang-active="">
-            <img class="lang__img lang__img_select" src="./images/lang/lang__ru.png" alt="Ru">
+        <div class="lang__link lang__link_select" data-lang-active="en">
+            <img class="lang__img lang__img_select" src="./images/lang/lang__en.png" alt="en">
         </div>
         <div class="lang__list" data-lang-list="">
-            <a class="lang__link lang__link_sub" data-ya-lang="ru">
+            <!-- <a class="lang__link lang__link_sub" data-ya-lang="ru">
                 <img class="lang__img" src="./images/lang/lang__ru.png" alt="ru">
-            </a>
+            </a> -->
             <a class="lang__link lang__link_sub" data-ya-lang="en">
                 <img class="lang__img" src="./images/lang/lang__en.png" alt="en">
             </a>
-            <a class="lang__link lang__link_sub" data-ya-lang="sr">
+            <!-- <a class="lang__link lang__link_sub" data-ya-lang="sr">
                 <img class="lang__img" src="./images/lang/lang__sr.png" alt="sr">
-            </a>
-            <a class="lang__link lang__link_sub" data-ya-lang="sr">
-              <img class="lang__img" src="./images/lang/lang__sr.png" alt="sr">
+            </a> -->
+            <a class="lang__link lang__link_sub" data-ya-lang="hr">
+              <img class="lang__img" src="./images/lang/lang__hr.png" alt="hr">
           </a>
             <!-- <a class="lang__link lang__link_sub" data-ya-lang="fr">
                 <img class="lang__img" src="./images/lang/lang__fr.png" alt="fr">
@@ -232,37 +244,242 @@
             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Top Destinations</h3>
           </div>
           <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" style="height: 250px;" src="assets/img/Cairo-Egypt.jpg" alt="Cairo" />
-                <div class="card-body py-4 px-3">
+            <div class="col-md-4 col-sm-6 mb-4 ">
+              <div class="card overflow-hidden shadow"> <img class="card-img-top" style="height: 250px;" src="assets/img/mahmya.jpg" alt="MAHMYA ISLAND
+" />
+                <div class="card-body  px-3" style="    min-height: 222px;
+">
+                    <!-- <div class="d-flex align-items-center mb-3"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">10 Days Trip</span></div> -->
+
                   <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Cairo</a></h4><span class="fs-1 fw-medium">$5,42k</span>
+                    
+                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link ps-2 pe-2 pt-1" href="#">MAHMYA ISLAND
+</a></h4><span class="fs-1 fw-medium bg-warning ps-2 pe-2 pt-1 pb-1" id="price" style="color: white; border-radius: 20px; max-width: fit-content;">$80,00</span>
                   </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">10 Days Trip</span></div>
+
+                  <style>
+                    @media only screen and (max-width: 600px) {
+                            #price {
+                                margin: auto;
+                            }
+                            }
+                  </style>
+                  <ul style="list-style: none; text-align: left;">
+                    <li id="liright" style="margin-bottom: 10px;  position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        mahmya island
+
+
+
+                    </li>
+                    <li id="liright" style="margin-bottom: 10px; position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        snorkelling
+
+
+                    </li>
+                   
+                    
+                   
+                </ul>
                 </div>
+                <a type="button" href="#" class="btn btn-warning">Details</a>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" style="height: 250px;" src="assets/img/safari.jpg" alt="Safari" />
-                <div class="card-body py-4 px-3">
+            <div class="col-md-4 col-sm-6 mb-4 ">
+              <div class="card overflow-hidden shadow"> <img class="card-img-top" style="height: 250px;" src="assets/img/seascope.jpeg" alt="SEASCOPE" />
+                <div class="card-body  px-3" style="    min-height: 222px;
+">
+                    <!-- <div class="d-flex align-items-center mb-3"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">10 Days Trip</span></div> -->
+
                   <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="./trip.html">Safari</a></h4><span class="fs-1 fw-medium">$4.2k</span>
+                    
+                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link ps-2 pe-2 pt-1" href="#">SEASCOPE</a></h4><span class="fs-1 fw-medium bg-warning ps-2 pe-2 pt-1 pb-1" id="price" style="color: white; border-radius: 20px; max-width: fit-content;">$5,42</span>
                   </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">12 Days Trip</span></div>
+
+                  <style>
+                    @media only screen and (max-width: 600px) {
+                            #price {
+                                margin: auto;
+                            }
+                            }
+                  </style>
+                  <ul style="list-style: none; text-align: left;">
+                    <li id="liright" style="margin-bottom: 10px;  position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        seascope
+
+
+                    </li>
+                    <li id="liright" style="margin-bottom: 10px; position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        snorkeling
+
+
+                    </li>
+                  
+                    
+                   
+                </ul>
                 </div>
+                <a type="button" href="#" class="btn btn-warning">Details</a>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow"> <img class="card-img-top" style="height: 250px;" src="assets/img/luxor.jpg" alt="Luxor" />
-                <div class="card-body py-4 px-3">
+            <div class="col-md-4 col-sm-6 mb-4 ">
+              <div class="card overflow-hidden shadow"> <img class="card-img-top" style="height: 250px;" src="assets/img/safari.jpg" alt="safari" />
+                <div class="card-body  px-3" style="    min-height: 222px;
+">
+                    <!-- <div class="d-flex align-items-center mb-3"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">10 Days Trip</span></div> -->
+
                   <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
-                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Luxor</a></h4><span class="fs-1 fw-medium">$15k</span>
+                    
+                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link ps-2 pe-2 pt-1" href="./trip.html">safari</a></h4><span class="fs-1 fw-medium bg-warning ps-2 pe-2 pt-1 pb-1" id="price" style="color: white; border-radius: 20px; max-width: fit-content;">$20,42</span>
                   </div>
-                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">28 Days Trip</span></div>
+<a href="https://wa.me/+201204652800" class="btn-whatsapp-pulse">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      
+      <!-- <a href="" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
+        <i class="fab fa-whatsapp"></i>
+      </a> -->
+
+      <style>
+        .btn-whatsapp-pulse {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+.btn-whatsapp-pulse-border {
+	bottom: 120px;
+	right: 20px;
+	animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #25d366;
+	opacity: 0.75;
+	animation-name: pulse-border;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+	0% {
+		padding: 25px;
+		opacity: 0.75;
+	}
+	75% {
+		padding: 50px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+      </style>
+                  <style>
+                    @media only screen and (max-width: 600px) {
+                            #price {
+                                margin: auto;
+                            }
+                            }
+                  </style>
+                  <ul style="list-style: none; text-align: left;">
+                    <li id="liright" style="margin-bottom: 10px;  position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        Orange bay island
+
+
+                    </li>
+                    <li id="liright" style="margin-bottom: 10px; position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        snorkelling
+
+
+                    </li>
+                    <li id="liright" style="margin-bottom: 10px; position: relative; ">
+                        <!-- <img src="./assets/img/right.png" style="max-width: 100%; width: 30px;" alt=""> -->
+                        Paradise island
+
+
+                    </li>
+                    
+                   
+                </ul>
                 </div>
+                <a type="button" href="#" class="btn btn-warning">Details</a>
               </div>
             </div>
+            
           </div>
+
+          <style>
+            <style>
+                            #ligreen::after{
+                                content: "";
+        width: 32px;
+        height: 24px;
+        background: url(./assets/img/rightorange.png) no-repeat;
+        background-size: contain;
+        top: 0px;
+        left: -30px;
+        position: absolute;
+                            }
+                            #liright::before
+                            {
+                                content: "";
+        width: 32px;
+        height: 24px;
+        background: url(./assets/img/right.png) no-repeat;
+        background-size: contain;
+        top: 0px;
+        left: -30px;
+        position: absolute;
+                            }
+                            #liwrong::after{
+                                content: "";
+        width: 32px;
+        height: 24px;
+        background: url(./assets/img/wrong.png) no-repeat;
+        background-size: contain;
+        top: 0px;
+        left: -30px;
+        position: absolute;
+                            }
+    
+                        </style>
+          </style>
           <div style="text-align: center;">
             <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!" role="button">Explore More</a>
 
@@ -535,8 +752,8 @@
             </div>
             <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0  order-lg-4 order-md-1 col-sm-6">
               <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="#!"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="#!"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="#!"><i class="fab fa-twitter"> </i></a></div>
-              <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
-              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
+              <!-- <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
+              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div> -->
             </div>
           </div>
         </div><!-- end of .container-->
