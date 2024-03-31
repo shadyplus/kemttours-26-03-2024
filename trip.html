@@ -210,6 +210,20 @@
 <div class="swiper-button-prev"></div>
 </div>
 <style>
+  .swiper-button-next{
+    color: white;
+    background: #ffa50082;
+    border-radius: 20px;
+    padding: 27px;
+    right: 0;
+  }
+  .swiper-button-prev{
+    color: white;
+    background: #ffa50082;
+    border-radius: 20px;
+    padding: 27px;
+    left: 0;
+  }
 .swiper-container {
 width: 100%;
 height: 100%;
@@ -236,6 +250,10 @@ align-items: center;
       border-radius: 30px;
       height: 311px;
     }
+    .swiper-backface-hidden .swiper-slide{
+      margin-top: 12px;
+    margin-bottom: 12px;
+    }
 </style>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -255,7 +273,7 @@ align-items: center;
         prevEl: '.slider1 .swiper-button-prev',
       },
       autoplay: {
-        delay: 2000,
+        delay: 10000,
       },
       slideToClickedSlide: true,
       touch: true,
@@ -441,10 +459,21 @@ align-items: center;
             <h1 style="text-align: center;">
               Reservation
             </h1>
+            <!-- <div class="container">
+              <div class="row d-flex align-items-center">
+                <img width="48" style="max-width: 100%; width: 65px;" height="48" src="https://img.icons8.com/fluency/48/viber.png" alt="viber"/>
+                <img width="48" style="max-width: 100%; width: 65px;" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+              </div>
+            </div> -->
             <div style="text-align: center;">
               <a href="https://wa.me/+201204652800"><img src="./assets/img/whatsapp-logo-icon-png-svg.png" style="max-width: 100%;width: 300px;" alt="">
+                <br>
+                <br>
+                
+              <a href="viber://+79240000000"><img src="./assets/img/viberlogo.png" style="max-width: 100%;width: 300px;" alt="">
               </a>
-              
+              <a href="viber://chat?number=+[201022165014]">Click here to message us on Viber</a>
+
             </div>
             
           </div>
@@ -465,10 +494,11 @@ align-items: center;
             <!-- <i class="fab fa-facebook-f fa-times"></i> -->
             <i class="fa-solid fa-phone "></i>
           </div>
-          <button><i class="fas fa-phone-alt"></i> Free Consultation</button>
-          <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
+          <!-- <button><i class="fas fa-phone-alt"></i> Free Consultation</button> -->
+          <!-- <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a> -->
           <a href="#" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="messenger-color"><i class="fab fa-facebook-messenger"></i></a>
+          <!-- <a href="#" class="messenger-color"><i class="fab fa-facebook-messenger"></i></a> -->
+          <a href="#" class="messenger-color"><i class="fa-brands fa-viber"></i></a>
         </div>
       </div>
       <style>
@@ -583,7 +613,7 @@ align-items: center;
 }
 
 #main-button ~ .messenger-color {
-  background: linear-gradient(0deg, #0078FF, #00C6FF);
+  background: linear-gradient(0deg, #7360f2, #7360f2);
 }
 
 #main-button.open ~ a {
@@ -713,53 +743,126 @@ mainDiv.addEventListener('click', function(){
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="pb-0 pb-lg-4">
+     
+      <!-- <section> close ============================-->
+        <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                      <ul class="adress">
+                           <span><img src="./assets/img/logo.png" alt=""> Kemt Tours</span>    
+                           <li>
+                              <p>Book your trip in minute, get full Control for much longer.
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/logo.png" width="100" alt="kemttours" />
-              <p class="fs--1 text-secondary mb-0 fw-medium">Book your trip in minute, get full Control for much longer.</p>
-            </div>
-            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
-              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">About</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Careers</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mobile</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
-              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contact</h4>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Help/FAQ</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Press</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Affiliate</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
-              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">More</h4>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Airlinefees</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Airline</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Low fare tips</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
-              <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="#!"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="#!"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="#!"><i class="fab fa-twitter"> </i></a></div>
-              <!-- <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
-              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div> -->
+                              </p>
+                            </li>
+                                 
+                            <li>
+                              <p><i class="fa-solid fa-phone"></i> +201204652800</p>
+                            </li>
+                                 
+                            <li>
+                              <p>info@gmail.com</p>
+                            </li>
+                       </ul>
+                  </div>
+                  
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <ul class="contact">
+                           <span>Contact Us</span>    
+                           <li>
+                              <a href="#">Viber</a>
+                            </li>
+                                 
+                            <li>
+                               <a href="#">Whatsapp</a>
+                            </li>
+                                 
+                            <li>
+                              <a href="#">Instagram</a>
+                            </li>
+                                 
+                            <!-- <li>
+                               <a href="#">Gallery </a>
+                            </li>
+                                 
+                            <li>
+                              <a href="#">Contact</a>
+                           </li> -->
+                      </ul>
+                  </div>
+             
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                      <ul class="social">
+                         <span>Follow Us On Social Media</span>    
+                         <li>
+                          <a href=""> <img width="48" height="48"  src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></a>
+                           
+                         </li>
+                        
+                         <li>
+                          <a href=""><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a> 
+                         </li>
+                          
+                         
+                       </ul>
+                  </div>
+             </div> 
+             <div class=" text-center">
+              <p style="color: white;" class="mb-0  fs--1 fw-medium">Developed With <i class="fa-solid fa-heart"></i> By <a style="color: orange;" href="https://codecraftin.com/">codecraftin</a> </p>
             </div>
           </div>
-        </div><!-- end of .container-->
+          
+      </footer>
+      <style>
 
-      </section>
-      <!-- <section> close ============================-->
+footer{
+     background-color: #33383c;
+     padding:70px 0px;
+     padding-bottom: 20px;
+}	       
+
+footer ul li{
+    padding:5px 0px;
+}
+
+.adress span , .contact span , .social span{
+   color: #FFF; 
+   font-weight: 800; 
+   padding-bottom: 10px; 
+   margin-bottom: 20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 3px;
+}
+ 
+.adress li p , .contact li a , .social li a{
+    color:#FFF;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.social li{
+    float:left;
+}
+
+.adress , .contact , .social {
+    list-style: none;
+}
+
+.fa{
+    color:#9c9c9c;
+    margin-right: 15px;
+    font-size:14px;
+}
+
+      </style>
       <!-- ============================================-->
 
 
-      <div class="py-5 text-center">
-        <p class="mb-0 text-secondary fs--1 fw-medium">Developed With Love By <a href="https://codecraftin.com/">codecraftin</a> </p>
-      </div>
+      
     </main>
     <!-- ===============================================-->
     <!--    End of Main Content-->
