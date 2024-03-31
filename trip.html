@@ -69,9 +69,9 @@
                 </ul>
               </div></li> -->
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="./index.html">Home</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Services</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Services</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Feedback</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="./ourservices.html">Services</a></li>
+              <!-- <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Services</a></li> -->
+              <!-- <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Feedback</a></li> -->
               <!-- <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Feedback</a></li> -->
               
               <!-- <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Login</a></li> -->
@@ -92,9 +92,9 @@
             <img class="lang__img lang__img_select" src="./images/lang/lang__en.png" alt="en">
         </div>
         <div class="lang__list" data-lang-list="">
-            <!-- <a class="lang__link lang__link_sub" data-ya-lang="ru">
+            <a class="lang__link lang__link_sub" data-ya-lang="ru">
                 <img class="lang__img" src="./images/lang/lang__ru.png" alt="ru">
-            </a> -->
+            </a>
             <a class="lang__link lang__link_sub" data-ya-lang="en">
                 <img class="lang__img" src="./images/lang/lang__en.png" alt="en">
             </a>
@@ -198,19 +198,21 @@
      <!-- Slider 1 -->
 <div class="swiper-container slider1">
 <div id="sww" class="swiper-wrapper">
-<div id="ss" class="swiper-slide"><img src="./assets/img/Cairo-Egypt.jpg" alt=""></div>
-<div class="swiper-slide"><img src="./assets/img/Cairo-Egypt.jpg" alt=""></div>
-<div class="swiper-slide"><img src="./assets/img/Cairo-Egypt.jpg" alt=""></div>
-<div class="swiper-slide"><img src="./assets/img/Cairo-Egypt.jpg" alt=""></div>
-<div class="swiper-slide"><img src="./assets/img/Cairo-Egypt.jpg" alt=""></div>
-<div class="swiper-slide"><img src="./assets/img/Cairo-Egypt.jpg" alt=""></div>
+<div id="ss" class="swiper-slide"><img src="./assets/img/dest/1 (1).jpeg" alt=""></div>
+<div class="swiper-slide"><img src="./assets/img/dest/1 (1).jpg" alt=""></div>
+<div class="swiper-slide"><img src="./assets/img/dest//1 (2).jpg" alt=""></div>
+<div class="swiper-slide"><img src="./assets/img/dest/1 (3).jpg" alt=""></div>
+<div class="swiper-slide"><img src="./assets/img/dest/1 (4).jpg" alt=""></div>
+<div class="swiper-slide"><img src="./assets/img/dest/1 (3).jpg" alt=""></div>
 </div>
 <!-- Add Navigation Buttons -->
 <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>
 </div>
 <style>
+
   .swiper-button-next{
+    display: none;
     color: white;
     background: #ffa50082;
     border-radius: 20px;
@@ -218,6 +220,7 @@
     right: 0;
   }
   .swiper-button-prev{
+    display: none;
     color: white;
     background: #ffa50082;
     border-radius: 20px;
@@ -236,6 +239,7 @@ background: transparent;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .swiper-slide {
       background-position: center;
@@ -273,7 +277,7 @@ align-items: center;
         prevEl: '.slider1 .swiper-button-prev',
       },
       autoplay: {
-        delay: 10000,
+        delay: 2000,
       },
       slideToClickedSlide: true,
       touch: true,
@@ -450,15 +454,86 @@ align-items: center;
               </div>
             </div>
             <hr>
+            <!-- <div class='glow'>Hola soy un GLOWING div </div> -->
+            <style>
+              
+.glow{
+  padding:clamp(1.5rem,3vw,5rem);
+  /* border:0px solid white; */
+  border-radius:1rem;
+  position:relative;
+  /* background-color:black; */
+  
+}
+
+:root{
+  --azul:#0033ff;
+  --violeta: orange;
+  --blanco: white;
+  --deg:0deg;
+    
+}
+@property --deg{
+  syntax:'<angle>';
+  inherits:false;
+  initial-value:0deg;
+}
+.glow::after{
+  
+  content:'';
+  border-radius:inherit;
+  inset:-0.5rem;
+  background-color:yellow;
+  position:absolute;
+  z-index:-1;
+  background:conic-gradient( from var(--deg),var(--azul),var(--violeta),var(--azul));
+  animation:girar 3s linear infinite;
+}
+
+.glow::before{
+  filter:blur(40px);
+  --deg:0deg;
+  content:'';
+  border-radius:inherit;
+  inset:-1.0rem;
+  background-color:yellowgreen;
+  position:absolute;
+  z-index:-1;
+  background:conic-gradient( from var(--deg),var(--azul),var(--violeta),var(--azul));
+  animation:girar 3s linear infinite;
+}
+
+
+@keyframes girar {
+  from{
+    --deg:0deg;
+  }
+  
+  to{
+    --deg:360deg;
+  }
+}
+            </style>
             <h1 style="text-align: center;">
               price
             </h1>
-            <a style="cursor: auto;" type="button" class="btn btn-warning">5 € per person</a>
+            <a style="cursor: auto; padding: 15px; margin-top: 15px; font-size: larger;" type="button" class="btn btn-warning glow">5 € per person</a>
 
             <hr>
             <h1 style="text-align: center;">
-              Reservation
+              Reservation : 
             </h1>
+            <p style="text-align: center;">
+              <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg> <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg>
+            </p>
             <!-- <div class="container">
               <div class="row d-flex align-items-center">
                 <img width="48" style="max-width: 100%; width: 65px;" height="48" src="https://img.icons8.com/fluency/48/viber.png" alt="viber"/>
@@ -466,18 +541,124 @@ align-items: center;
               </div>
             </div> -->
             <div style="text-align: center;">
-              <a href="https://wa.me/+201204652800"><img src="./assets/img/whatsapp-logo-icon-png-svg.png" style="max-width: 100%;width: 300px;" alt="">
-                <br>
-                <br>
+              
                 
-              <a href="viber://+79240000000"><img src="./assets/img/viberlogo.png" style="max-width: 100%;width: 300px;" alt="">
-              </a>
-              <a href="viber://chat?number=+79260468688">Click here to message us on Viber</a>
-              <a href="tel:+201023569510">Click here to message us on Viber</a>
-              <a href="viber://add?number=+201023569510">Click here to message us on Viber</a>
+                
+                <a class="rise-shake" href="https://wa.me/+201204652800"><img src="./assets/img/whatsapp-logo-icon-png-svg.png" style="max-width: 100%;width: 300px;" alt=""></a>
+                  <a class="rise-shake" href="tel:+201204652800"><img src="./assets/img/viberlogo.png" style="max-width: 100%;width: 300px;" alt=""></a>
+                
+              <!-- <a href="tel:+79260468688"><img src="./assets/img/viberlogo.png" style="max-width: 100%;width: 300px;" alt=""></a> -->
+            <style>
+              @media only screen and (max-width: 600px) {
+                .arrows {
+                  display: block;
+                  margin: auto;
+}
+}
+.arrows {
+	width: 60px;
+	height: 72px;
+	/* position: absolute; */
+	left: 50%;
+	/* margin-left: -30px; */
+	bottom: 20px;
+}
 
+.arrows path {
+	stroke: orange;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
 
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
 
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+.rise-shake {
+  /* background: #48abe0; */
+  color: white;
+  padding: 1.5rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.rise-shake.strong-hover-shake:hover {
+  animation: tilt-shaking 0.15s infinite;
+}
+
+.rise-shake.gentle-hover-shake:hover {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+.rise-shake.gentle-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+.rise-shake.strong-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+.rise-shake.constant-tilt-shake {
+  animation: tilt-shaking 0.3s infinite;
+}
+
+.rise-shake.vertical-shake {
+  animation: vertical-shaking 0.35s infinite;
+}
+
+.rise-shake.horizontal-shake {
+  animation: horizontal-shaking 0.35s infinite;
+}
+
+.rise-shake.rise-shake {
+  animation: jump-shaking 1.83s infinite;
+}
+
+.rise-shake.skew-shake-x {
+  animation: skew-x-shake 1.3s infinite;
+}
+
+.rise-shake.skew-shake-y {
+  animation: skew-y-shake 1.3s infinite;
+}
+@keyframes jump-shaking {
+  0% { transform: translateX(0) rotate(0)}
+  35% { transform: translateY(0) rotate(0)}
+  85% { transform: translateY(0) rotate(0) }
+  89% { transform: translateY(-2px) rotate(-17deg) }
+  93% { transform: translateY(-3px) rotate(17deg) }
+  98% { transform: translateY(-4px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+}
+            </style>
             </div>
             
           </div>
@@ -800,7 +981,7 @@ mainDiv.addEventListener('click', function(){
                       <ul class="social">
                          <span>Follow Us On Social Media</span>    
                          <li>
-                          <a href=""> <img width="48" height="48"  src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></a>
+                          <a href="https://www.facebook.com/profile.php?id=61557750484560&mibextid=ZbWKwL"> <img width="48" height="48"  src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></a>
                            
                          </li>
                         
